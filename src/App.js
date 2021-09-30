@@ -9,9 +9,13 @@ function App() {
   const handleSub = () => dispatch(sub(1))
   return (
     <div className="App">
-      <span>{counter}</span>
-      <button onClick={handleAdd}>+</button>
-      <button onClick={handleSub}>-</button>
+      <header className="App-header">
+          <div>
+            <h3>{counter}</h3>
+            <button onClick={handleAdd}>+</button>
+            <button onClick={handleSub}>-</button>
+          </div>
+      </header>
     </div>
   );
 }
